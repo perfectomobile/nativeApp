@@ -23,10 +23,15 @@ import com.perfectomobile.selenium.api.IMobileWebDriver;
 public class logIn {
 
 	IMobileDevice _device;
+	
+	
 	MobileDriver PMdriver ;
 	public logIn(String dev) {
 
-		PMdriver = new MobileDriver();
+		String host = Constants.PM_CLOUD;
+		String user = Constants.PM_USER;
+		String password = Constants.PM_PASSWORD;
+		PMdriver = new MobileDriver(host, user, password);
 		_device = PMdriver.getDevice(dev);
 
 
