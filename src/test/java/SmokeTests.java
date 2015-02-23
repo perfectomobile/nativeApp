@@ -32,7 +32,7 @@ import com.perfectomobile.selenium.api.IMobileDevice;
 import com.perfectomobile.selenium.api.IMobileDriver;
 import com.perfectomobile.selenium.options.MobileDeviceProperty;
 
-public class TestNGUnitedTest {
+public class SmokeTests {
 
 	String _Device;
 	@BeforeMethod
