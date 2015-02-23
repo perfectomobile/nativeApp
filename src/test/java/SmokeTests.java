@@ -50,10 +50,10 @@ public class NewTest {
 	//@Parameters({ "deviceID" })
 	@Test (dataProvider="Devices" )
 	public void testDevices(String type,String deviceID) {
-		starbucksLogIn test= null;
+		logIn test= null;
 		if (type.equals("Device"))
 		{
-			test= new starbucksLogIn(deviceID);
+			test= new logIn(deviceID);
 		}
 		 
 		test.runTest();
