@@ -1,4 +1,4 @@
-package starbucks.test;
+package test.java;
 
 import java.io.File;
 import java.io.IOException;
