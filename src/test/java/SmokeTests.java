@@ -39,8 +39,11 @@ public class SmokeTests {
 	public Object[][] testSumInput() {
 		return new Object[][] { 
 				// build dynamic list 
-				{ "Device", "5CDCB21A" }, 
-		 //	 	{ "Device", "39F3DA5531ADBE2A05CFF4D65E43A2C38D3D595A" },
+			{ "Device", "0149BCA71700D01F" }, 
+			{ "Device", "39F3DA5531ADBE2A05CFF4D65E43A2C38D3D595A" },
+		  	{ "Device", "5CDCB21A"},
+		  	{ "Device", "57AF4ED9"},
+//			
 //			
 		};
 	}
