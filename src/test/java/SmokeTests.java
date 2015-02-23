@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
  import org.testng.annotations.BeforeTest;
 
 
-public class NewTest {
+public class SmokeTests {
 
 	String _Device;
 	RemoteWebDriver _RWD;
