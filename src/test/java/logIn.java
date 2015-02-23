@@ -118,7 +118,16 @@ public class logIn {
 	{
 
 		try {
-			WebElement menu = w.findElement(By.xpath("(//*[@class='android.widget.ImageView'])[2]"));
+		WebElement menu;
+			try
+			{
+				 menu = w.findElement(By.xpath("//*[@resourceid='android:id/up']"));
+	
+			}catch(Exception e1)
+			{
+				 menu = w.findElement(By.xpath("(//*[@class='android.widget.ImageView'])[2]"));
+			}
+			
 			menu.click();
 			w.findElement(By.xpath("//text[text()='SETTINGS']")).click();
 			try {
@@ -127,11 +136,9 @@ public class logIn {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			_device.getMobileTouchScreen().swipe(new MobileCoordinates(new MobilePoint("50%,85%")), new MobileCoordinates(new MobilePoint("50%,15%")), 3);
-
+			_device.getMobileTouchScreen().swipe(new MobileCoordinates(new MobilePoint("50%,85%")), new MobileCoordinates(new MobilePoint("50%,15%")), 3);		
 			w.findElement(By.xpath("//text[text()='Sign Out']")).click();
 			w.findElement(By.xpath("//button[text()='SIGN OUT']")).click();
-
 
 		} catch (Exception e) {
 			// not found = iphone
