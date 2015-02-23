@@ -31,7 +31,7 @@ public class logIn {
 
 
 	}
-	public void logIn()
+	public void runTest()
 	{
 		IMobileWebDriver  NativeDriver ;
 		IMobileWebDriver  VisualDriver;
