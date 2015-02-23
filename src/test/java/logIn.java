@@ -6,10 +6,6 @@ import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
 
 
-
-
-
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -28,7 +24,7 @@ public class logIn {
 
 	IMobileDevice _device;
 	MobileDriver PMdriver ;
-	public starbucksLogIn(String dev) {
+	public logIn(String dev) {
 
 		PMdriver = new MobileDriver();
 		_device = PMdriver.getDevice(dev);
